@@ -7,8 +7,8 @@
     --search-text: #ffcdaf;
     --text-color: #ffcd6a;
     --smalltext-color: #dc9448;
-    --prime-color: #2c190d;
-    --secnd-color: #372853;
+    --prime-color: #191817;
+    --secnd-color: #332947;
     --background-color: #1b142c;
     --btn-color: #7d14c3;
 }
@@ -38,7 +38,7 @@ body {
 
 .btn:hover {
     background-color: var(--btn-color);
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     transition: background-color .4s ease;
 
 }
@@ -164,6 +164,7 @@ nav .menu .nav-links li:hover {
     align-items: center;
     margin-bottom: 100px;
     color: var(--smalltext-color);
+    margin-bottom: 80px;
 }
 
 .home h1 {
@@ -196,7 +197,7 @@ nav .menu .nav-links li:hover {
 
 .home .images img {
     border-radius: 30px;
-    width: 200px;
+    width: 600px;
 }
 
 
@@ -213,34 +214,43 @@ nav .menu .nav-links li:hover {
 
 
 .sobre {
+    padding-top: 50px;
     background-color: var(--secnd-color);
-    height: 400px;
+    height: 600px;
     color: var(--text-color);
     width: 100%;
-    
+    display: flex;
+    align-items: center;
+
 }
 
 
-.sobre .sobre_text{
-    margin-left: 50px;
+.sobre .sobre_text {
+    margin-left: 20px;
+    padding-bottom: 200px;
 }
 
 
 
-.sobre h1 {
+.sobre_text h1 {
     font-size: 40px;
-    display: flex;
     text-align: left;
 
 }
 
 
-.sobre span {
+.sobre_text span {
     display: flex;
     text-align: left;
-    padding: 20px 30px;
+    padding-left: 10px;
     width: 700px;
-    font-size: 20px;
+    font-size: 18px;
+}
+
+.sobre img {
+    display: flex;
+    width: 680px;
+    height: 440px;
 }
 
 
