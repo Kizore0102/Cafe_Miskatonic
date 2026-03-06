@@ -1,28 +1,30 @@
 :root {
-    --body-color1: #5a3f2d;
-    --body-color: #775a42;
     --nav-color: rgb(17, 5, 28);
     --side-nav: #cde5e5;
     --search-bar: hsl(265, 38%, 13%);
-    --search-text: #ffcdaf;
+    --btn-text: #fffeee;
     --text-color: #ffcd6a;
     --smalltext-color: #dc9448;
     --prime-color: #191817;
     --secnd-color: #332947;
     --background-color: #1b142c;
-    --btn-color: #7d14c3;
+    --background-shadow: #110815;
+    --btn-color: #cb2073;
+    --box-light: #761594;
 }
+
+/*Geral*/
+
+
 
 body {
     background-color: var(--background-color);
     text-align: center;
-    display: grid;
+    display: block;
     color: var(--text-color);
 
 }
 
-
-/*Geral*/
 
 .btn {
     color: var(--btn-color);
@@ -35,10 +37,9 @@ body {
 }
 
 
-
 .btn:hover {
     background-color: var(--btn-color);
-    color: #ffffff;
+    color: var(--btn-text);
     transition: background-color .4s ease;
 
 }
@@ -55,7 +56,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    height: 90px;
+    height: 70px;
     width: 100%;
     background-color: var(--nav-color)
 }
@@ -73,6 +74,7 @@ nav .nav-bar .logo_box span {
 .nav-bar .logo_box img {
     padding-top: 10px;
     padding-bottom: 10px;
+    width: 60px;
 }
 
 nav .nav-bar {
@@ -137,7 +139,7 @@ nav .nav-bar .logo a {
 
 /*logo-hover*/
 nav .nav-bar .logo_box span:hover {
-    background-color: rgba(138, 69, 146, 0.2);
+    background-color: var(--secnd-color);
     transition: background-color .4s ease;
     transition: box-shadow .3s ease;
     border-radius: 20px;
@@ -149,7 +151,8 @@ nav .menu .nav-links li:hover {
     background-color: var(--secnd-color);
     border-radius: 20px;
     background-size: 100px;
-    box-shadow: 0 0 40px 20px rgba(156, 31, 164, 0.3);
+    box-shadow: 0 0 45px 10px rgba(156, 31, 164, 0.3);
+    transition: box-shadow .3s ease;
 }
 
 
@@ -160,11 +163,11 @@ nav .menu .nav-links li:hover {
     background-color: var(--background-color);
     display: flex;
     width: 100%;
-    height: 100%;
     align-items: center;
     margin-bottom: 100px;
     color: var(--smalltext-color);
     margin-bottom: 80px;
+    justify-content: center;
 }
 
 .home h1 {
@@ -198,6 +201,7 @@ nav .menu .nav-links li:hover {
 .home .images img {
     border-radius: 30px;
     width: 600px;
+    padding: 10px;
 }
 
 
@@ -221,6 +225,7 @@ nav .menu .nav-links li:hover {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
 
 }
 
@@ -232,14 +237,14 @@ nav .menu .nav-links li:hover {
 
 
 
-.sobre_text h1 {
+.sobre .sobre_text h1 {
     font-size: 40px;
     text-align: left;
 
 }
 
 
-.sobre_text span {
+.sobre .sobre_text span {
     display: flex;
     text-align: left;
     padding-left: 10px;
@@ -251,21 +256,68 @@ nav .menu .nav-links li:hover {
     display: flex;
     width: 680px;
     height: 440px;
+    border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 16px, rgba(1, 1, 3, 0.1) 0px 8px 24px, rgba(0, 0, 0, 0.1) 0px 16px 56px;
 }
 
 
 
-
-/*---Imagens---*/
-
-.imagens {
-    background-color: var(--secnd-color);
-}
+/*---Cardapio---*/
 
 .cardapio {
     background-color: var(--background-color);
+    align-items: center;
+    justify-content: center;
+    height: 700px;
 
 }
+
+.cardapio img {
+    text-align: center;
+    padding: 10px;
+}
+
+.cardapio .box-cardapio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+.cardapio .box-cardapio .cardapio-item {
+
+    padding: 20px 20px;
+    margin: 10px 50px;
+
+}
+
+.cardapio .box-cardapio .cardapio-item img {
+    border-radius: 30px;
+    margin-bottom: 1px;
+}
+
+
+
+.cardapio .box-cardapio .cardapio-item .box-text {
+    background-color: var(--secnd-color);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 40px 60px;
+    box-shadow: 0px 7px 10px var(--background-shadow),
+        inset 0px 6px 5px var(--box-light);
+}
+
+.cardapio .box-cardapio .cardapio-item h3 {
+    background-color: var(--background-color);
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+
+
+
+
 
 
 .entrega {
