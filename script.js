@@ -8,20 +8,15 @@ function Get_id_click(_id, action) {
     document.getElementById(_id).addEventListener("click", action)
 }
 
-let _button = document.getElementById("btn").addEventListener("click")
+const _button = document.querySelector(".btn");
+const _cardapio_btn = document.querySelectorAll(".btn")
 
-_button = () => {
-    print("foda")
+
+
+function ButtonPrint(el_event) {
+    console.log("Nyarlatothep desconfia de que você achou os produtos muito antiquados....")
 }
 
+_button.addEventListener("click", ButtonPrint)
 
-
-print("coisa")
-let chen_level = 0
-Get_id_click("btn", () => {
-    print("chen")
-    chen_level += 1
-    Get_innerHTML("label-chen", `Lv.${chen_level}`)
-})
-
-
+_cardapio_btn.addEventListener("click", ButtonPrint)
