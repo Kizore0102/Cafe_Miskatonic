@@ -414,7 +414,7 @@ nav .menu .nav-links li:hover {
 
 
 .contato .contato-box {
-    background-color: rgba(0, 106, 85, 0.626);
+    background-color: var(--secnd-color);
     display: flex;
     justify-content: center;
 }
@@ -432,9 +432,9 @@ nav .menu .nav-links li:hover {
 }
 
 
-.contato .contato-box .contato-imgs{
-height: 20px;
-width: 15px;
-margin-right: 10px;
-margin-bottom: -5px;
+.contato .contato-box .contato-imgs {
+    height: 20px;
+    width: 15px;
+    margin-right: 10px;
+    margin-bottom: -5px;
 }
