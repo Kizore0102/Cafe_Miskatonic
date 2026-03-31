@@ -86,7 +86,7 @@ Durante o desenvolvimento deste projeto, foram praticados:
 
 ---
 
-## 💡 Observação
+## Observação
 
 Este projeto representa uma evolução pessoal no desenvolvimento front-end, meu primeiro projeto com:
 
